@@ -1,5 +1,11 @@
 /* Folha de estilos para a Página Inicial - WDD 130 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f3f6f9;
@@ -42,6 +48,7 @@ main {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    overflow: auto;
 }
 
 h1 {
@@ -49,8 +56,8 @@ h1 {
 }
 
 main img {
-    display: block;
-    margin: 10px 0;
+    float: right;
+    margin: 0 0 10px 15px;
     width: 150px;
     height: auto;
     border: 3px solid #003366;
@@ -65,12 +72,7 @@ p {
 
 aside {
     width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #e6f2ff;
-    color: #003366;
-    border-radius: 5px;
+    position: relative;
 }
 
 aside img {
@@ -92,4 +94,43 @@ footer {
 footer p {
     font-size: 0.9rem;
     color: #555;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #e6f2ff;
+    color: #003366;
+    border-radius: 5px;
+}
+
+ul.caixa {
+    padding-left: 2rem;
+}
+
+.caixa a {
+    color: #003366;
+    text-decoration: underline;
+}
+
+.caixa a:hover {
+    color: #0055a5;
+    text-decoration: none;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #003366;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #003366;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
